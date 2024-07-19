@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#h1{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.para{
+    text-align: center;
+    justify-content: center;
+    top: 55%;
+    margin-left: 10%;
+}
+.details{
+
+    text-align: center;
+    margin-top: 40%;
+    margin-right: 12%;
+    padding: auto;
+    font-weight: 600;
+    font-stretch: expanded;
+    font-style: italic;
+}
+#colorPicker{
+    cursor: pointer;
+}
+#card {
+    border: 5px solid white;
+    padding: 20px;
+    background-color: white;
+    background-image: url(./bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 550px;
+    text-align: center;
+    position: relative;
+}
+
+
+#card h1, #card p {
+    position: absolute;
+}
+
+
+#toolbar {
+    margin-top: 10px;
+   
+}
+
+#toolbar button {
+    margin: 5px;
+    background-color: white;
+    padding: 10px;
+    color: teal;
+    font-weight: 900;
+    cursor: pointer;
+    border: #2e7ba8;
+    
+}
+#toolbar button:hover{
+    background-color: teal;
+    color: white ;
+    box-shadow: 0 0 25px white,
+                0 0 50px teal,
+                0 0 100px white;
+
+    
+}

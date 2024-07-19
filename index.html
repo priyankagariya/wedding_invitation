@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Card Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="editor">
+        <div id="card">
+            <h1 contenteditable="true" draggable="true" ondragstart="drag(event)" id="h1">Wedding Invitation</h1>
+            <div contenteditable="true" draggable="true" ondragstart="drag(event)" class="details">
+                <ul>Groom's Name</ul>
+                <ul>WEDS</ul>
+                <ul>Bride's Name</ul>
+            </div>
+            <p contenteditable="true" draggable="true" ondragstart="drag(event)" id="p1" class="para">You are invited to our wedding on...</p>
+        </div>
+        <div id="toolbar">
+            <button onclick="changeFont('Arial')">Arial</button>
+            <button onclick="changeFont('Times New Roman')">Times New Roman</button>
+            <button onclick="undo()" ><img src="./undo.png" width="20px" >Undo</button>
+            <button onclick="redo()" ><img src="redo.png" width="20px" >Redo</button>
+            <button onclick="changeFontSize('increase')">Increase Font Size</button>
+            <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+            <input type="color" id="colorPicker" onchange="changeColor(event)" value="#000000">
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
